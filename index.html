@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ==========================================================
+       SEO PRINCIPAL
+  =========================================================== -->
+  <title>AC Bowl · Bowls saludables hechos al momento en Chillán</title>
+  <meta name="description" content="Armá tu bowl saludable con ingredientes frescos preparados al momento. Base, proteína, toppings y salsa a tu gusto. Pedí fácil por WhatsApp. Ensaladas que te hacen bien." />
+  <meta name="theme-color" content="#2F6B45" />
+  <meta name="author" content="AC Bowl" />
+  <link rel="canonical" href="https://www.acbowl.cl/" />
+
+  <!-- ==========================================================
+       OPEN GRAPH (Facebook / WhatsApp)
+  =========================================================== -->
+  <meta property="og:type" content="restaurant.menu" />
+  <meta property="og:site_name" content="AC Bowl" />
+  <meta property="og:title" content="AC Bowl · Tu bowl, tus reglas" />
+  <meta property="og:description" content="Bowls saludables y personalizados con ingredientes frescos preparados al momento. Armá el tuyo y pedí por WhatsApp." />
+  <meta property="og:url" content="https://www.acbowl.cl/" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:image" content="https://www.acbowl.cl/assets/img/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Bowl saludable de AC Bowl con palta, quinoa, pollo y vegetales frescos" />
+
+  <!-- ==========================================================
+       TWITTER CARDS
+  =========================================================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AC Bowl · Tu bowl, tus reglas" />
+  <meta name="twitter:description" content="Bowls saludables y personalizados, preparados al momento. Armá el tuyo y pedí por WhatsApp." />
+  <meta name="twitter:image" content="https://www.acbowl.cl/assets/img/og-cover.png" />
+
+  <!-- ==========================================================
+       FAVICON
+  =========================================================== -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/hoja.svg" />
+
+  <!-- ==========================================================
+       TIPOGRAFÍAS
+       (Para máximo rendimiento offline, ver README → "Fuentes")
+  =========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" />
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ==========================================================
+       DATOS ESTRUCTURADOS · Schema.org Restaurant (JSON-LD)
+  =========================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "AC Bowl",
+    "description": "Bowls saludables y personalizados con ingredientes frescos preparados al momento.",
+    "image": "https://www.acbowl.cl/assets/img/og-cover.png",
+    "url": "https://www.acbowl.cl/",
+    "servesCuisine": ["Saludable", "Bowls", "Ensaladas"],
+    "priceRange": "$$",
+    "telephone": "+56961924282",
+    "slogan": "Ensaladas que te hacen bien",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chillán",
+      "addressRegion": "Ñuble",
+      "addressCountry": "CL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "12:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "12:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/acbowl"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "128"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Accesibilidad: salto directo al contenido -->
+  <a class="skip-link" href="#constructor">Saltar al armador de bowl</a>
+
+  <!-- =============================================================
+       HEADER / NAVEGACIÓN
+  ============================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="AC Bowl · Inicio">
+        <img src="assets/icons/hoja.svg" alt="" width="30" height="30" class="brand__leaf" aria-hidden="true" />
+        <span class="brand__name">AC<span class="brand__accent">Bowl</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="navList">
+          <li><a href="#constructor">Armá tu bowl</a></li>
+          <li><a href="#favoritos">Favoritos</a></li>
+          <li><a href="#beneficios">Por qué AC Bowl</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--wa header__cta" href="#" data-wa-plain aria-label="Escribir por WhatsApp">
+        <img src="assets/icons/whatsapp.svg" alt="" width="18" height="18" aria-hidden="true" />
+        <span>Pedir</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <img src="assets/icons/menu.svg" alt="" width="24" height="24" aria-hidden="true" />
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <button class="mobile-menu__close" id="menuClose" aria-label="Cerrar menú">
+      <img src="assets/icons/cerrar.svg" alt="" width="26" height="26" aria-hidden="true" />
+    </button>
+    <nav aria-label="Navegación móvil">
+      <ul>
+        <li><a href="#constructor">Armá tu bowl</a></li>
+        <li><a href="#favoritos">Favoritos</a></li>
+        <li><a href="#beneficios">Por qué AC Bowl</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--wa btn--block" href="#" data-wa-plain>
+      <img src="assets/icons/whatsapp.svg" alt="" width="20" height="20" aria-hidden="true" />
+      <span>Pedir por WhatsApp</span>
+    </a>
+  </div>
+
+  <main id="contenido">
+    <!-- =============================================================
+         HERO
+    ============================================================== -->
+    <section class="hero" id="hero">
+      <!-- Formas orgánicas de fondo -->
+      <span class="blob blob--1" aria-hidden="true"></span>
+      <span class="blob blob--2" aria-hidden="true"></span>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="script hero__kicker reveal">Ensaladas que te hacen bien 🌿</p>
+          <h1 class="hero__title reveal">Tu bowl.<br /><span class="hero__title-accent">Tus reglas.</span></h1>
+          <p class="hero__sub reveal">
+            Creamos bowls personalizados con ingredientes frescos,
+            preparados al momento. Elegí base, proteína, toppings y salsa:
+            el resto lo hacemos nosotros.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary btn--lg" href="#constructor">
+              🍜 Armar mi bowl
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#favoritos">Ver favoritos</a>
+          </div>
+
+          <ul class="hero__trust reveal" aria-label="Sellos de confianza">
+            <li><img src="assets/icons/check.svg" alt="" width="18" height="18" aria-hidden="true" /> Ingredientes frescos</li>
+            <li><img src="assets/icons/check.svg" alt="" width="18" height="18" aria-hidden="true" /> Hecho al momento</li>
+            <li><img src="assets/icons/check.svg" alt="" width="18" height="18" aria-hidden="true" /> 100% a tu gusto</li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="hero__plate">
+            <img
+              src="assets/img/bowl-hero.svg"
+              alt="Bowl saludable con palta, quinoa, pollo, tomates cherry, pepino y hojas verdes"
+              width="520" height="520" class="hero__bowl" fetchpriority="high" />
+            <img src="assets/icons/hoja.svg" alt="" class="hero__deco hero__deco--1" aria-hidden="true" width="54" height="54" />
+            <img src="assets/icons/semillas.svg" alt="" class="hero__deco hero__deco--2" aria-hidden="true" width="46" height="46" />
+            <span class="hero__badge">
+              <strong>Fresco hoy</strong>
+              <em>preparado al momento</em>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#constructor" class="scroll-cue" aria-label="Bajar al armador de bowl">
+        <span class="scroll-cue__mouse"><span></span></span>
+        <span class="scroll-cue__txt">Armá el tuyo</span>
+      </a>
+    </section>
+
+    <!-- =============================================================
+         CONSTRUCTOR DE BOWL  (el protagonista)
+    ============================================================== -->
+    <section class="builder" id="constructor" aria-labelledby="builderTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Armá el tuyo</p>
+          <h2 id="builderTitle" class="section-title">Construí tu bowl perfecto</h2>
+          <p class="section-desc">
+            Cuatro pasos, combinaciones infinitas. El precio y la vista previa
+            se actualizan a medida que elegís.
+          </p>
+        </header>
+
+        <div class="builder__grid">
+          <!-- ---------- Columna de pasos ---------- -->
+          <div class="builder__steps">
+
+            <!-- Paso 1: Base -->
+            <fieldset class="step reveal" data-step="1">
+              <legend class="step__legend">
+                <span class="step__num">1</span>
+                <span>Elegí tu base</span>
+                <small class="step__hint">Elegí una</small>
+              </legend>
+              <div class="options options--single" role="radiogroup" aria-label="Base" data-group="base"></div>
+            </fieldset>
+
+            <!-- Paso 2: Proteína -->
+            <fieldset class="step reveal" data-step="2">
+              <legend class="step__legend">
+                <span class="step__num">2</span>
+                <span>Elegí tu proteína</span>
+                <small class="step__hint">Elegí una</small>
+              </legend>
+              <div class="options options--single" role="radiogroup" aria-label="Proteína" data-group="protein"></div>
+            </fieldset>
+
+            <!-- Paso 3: Toppings -->
+            <fieldset class="step reveal" data-step="3">
+              <legend class="step__legend">
+                <span class="step__num">3</span>
+                <span>Sumá tus toppings</span>
+                <small class="step__hint">Los que quieras</small>
+              </legend>
+              <div class="options options--multi" role="group" aria-label="Toppings" data-group="toppings"></div>
+            </fieldset>
+
+            <!-- Paso 4: Salsa -->
+            <fieldset class="step reveal" data-step="4">
+              <legend class="step__legend">
+                <span class="step__num">4</span>
+                <span>Coroná con salsa</span>
+                <small class="step__hint">Elegí una</small>
+              </legend>
+              <div class="options options--single" role="radiogroup" aria-label="Salsa" data-group="sauce"></div>
+            </fieldset>
+          </div>
+
+          <!-- ---------- Columna de resumen (sticky) ---------- -->
+          <aside class="builder__preview reveal" aria-label="Resumen de tu bowl">
+            <div class="preview-card">
+              <div class="preview-card__visual">
+                <svg id="bowlPreview" viewBox="0 0 300 300" role="img"
+                     aria-label="Vista previa de tu bowl"></svg>
+              </div>
+
+              <h3 class="preview-card__title script">Tu bowl</h3>
+
+              <dl class="summary" id="summary">
+                <div class="summary__row"><dt>Base</dt><dd data-sum="base">—</dd></div>
+                <div class="summary__row"><dt>Proteína</dt><dd data-sum="protein">—</dd></div>
+                <div class="summary__row"><dt>Extras</dt><dd data-sum="toppings">—</dd></div>
+                <div class="summary__row"><dt>Salsa</dt><dd data-sum="sauce">—</dd></div>
+              </dl>
+
+              <div class="summary__total">
+                <span>Total</span>
+                <strong id="totalPrice" aria-live="polite">$0</strong>
+              </div>
+
+              <button class="btn btn--wa btn--block btn--xl" id="orderBtn" type="button">
+                <img src="assets/icons/whatsapp.svg" alt="" width="22" height="22" aria-hidden="true" />
+                <span>Pedir este bowl</span>
+              </button>
+              <p class="preview-card__note">Se abre WhatsApp con tu pedido listo. No se envía solo.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Barra flotante de resumen (solo móvil) -->
+      <div class="mini-bar" id="miniBar" aria-hidden="true">
+        <div class="mini-bar__info">
+          <span class="mini-bar__label">Tu bowl</span>
+          <strong id="miniPrice">$0</strong>
+        </div>
+        <button class="btn btn--wa" id="miniOrderBtn" type="button">
+          <img src="assets/icons/whatsapp.svg" alt="" width="18" height="18" aria-hidden="true" />
+          <span>Pedir</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         FAVORITOS
+    ============================================================== -->
+    <section class="favorites" id="favoritos" aria-labelledby="favTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Los que más se piden</p>
+          <h2 id="favTitle" class="section-title">Los favoritos de nuestros clientes</h2>
+          <p class="section-desc">¿Sin ganas de decidir? Estos combos nunca fallan.</p>
+        </header>
+
+        <div class="fav-grid" id="favGrid"><!-- tarjetas por JS --></div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         BENEFICIOS
+    ============================================================== -->
+    <section class="benefits" id="beneficios" aria-labelledby="benTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Por qué AC Bowl</p>
+          <h2 id="benTitle" class="section-title">Buena comida, sin vueltas</h2>
+        </header>
+
+        <ul class="benefit-grid">
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/fresco.svg" alt="" width="30" height="30" /></span>
+            <h3>Ingredientes frescos</h3>
+            <p>Compramos y cortamos cada día. Nada de congelados ni sobras del día anterior.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/reloj.svg" alt="" width="30" height="30" /></span>
+            <h3>Preparación al momento</h3>
+            <p>Tu bowl se arma cuando lo pedís, para que llegue en su punto justo.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/infinito.svg" alt="" width="30" height="30" /></span>
+            <h3>Combinaciones ilimitadas</h3>
+            <p>Bases, proteínas, toppings y salsas para armar el bowl que se te antoje.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/ajustes.svg" alt="" width="30" height="30" /></span>
+            <h3>Personalización total</h3>
+            <p>Vos mandás. Sumá, sacá y mezclá hasta que quede exactamente a tu gusto.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/medalla.svg" alt="" width="30" height="30" /></span>
+            <h3>Ingredientes premium</h3>
+            <p>Palta cremosa, quinoa real y proteínas bien preparadas. Se nota en cada bocado.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/moto.svg" alt="" width="30" height="30" /></span>
+            <h3>Entrega rápida</h3>
+            <p>Coordinamos el reparto para que tu bowl llegue fresco y a tiempo.</p>
+          </li>
+          <li class="benefit reveal">
+            <span class="benefit__icon"><img src="assets/icons/corazon-manos.svg" alt="" width="30" height="30" /></span>
+            <h3>Atención personalizada</h3>
+            <p>Hablás directo con nosotros por WhatsApp. Sin bots, sin formularios eternos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         INFORMACIÓN IMPORTANTE  (en clave de beneficios)
+    ============================================================== -->
+    <section class="info" aria-labelledby="infoTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Cómo funciona el reparto</p>
+          <h2 id="infoTitle" class="section-title">Pedí con tiempo y comé antes</h2>
+        </header>
+
+        <div class="info-grid">
+          <article class="info-card reveal">
+            <span class="info-card__icon"><img src="assets/icons/caja.svg" alt="" width="28" height="28" /></span>
+            <h3>Agendá con anticipación</h3>
+            <p>Los horarios de reparto varían según la demanda. Reservar con tiempo te asegura tu lugar en la ruta.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="info-card__icon"><img src="assets/icons/cohete.svg" alt="" width="28" height="28" /></span>
+            <h3>Salís entre los primeros</h3>
+            <p>Cuando reservás con anticipación, tu pedido entra al inicio de la tanda y sale antes.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="info-card__icon"><img src="assets/icons/corazon.svg" alt="" width="28" height="28" /></span>
+            <h3>Nos ayudás a llegar mejor</h3>
+            <p>Pedir con tiempo nos permite organizar los repartos y dar un servicio más rápido para todos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         GALERÍA (masonry)
+    ============================================================== -->
+    <section class="gallery" id="galeria" aria-labelledby="galTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Del mostrador a la cámara</p>
+          <h2 id="galTitle" class="section-title">Se come con los ojos</h2>
+        </header>
+
+        <div class="masonry" id="masonry"><!-- imágenes por JS --></div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         RESEÑAS
+    ============================================================== -->
+    <section class="reviews" id="resenas" aria-labelledby="revTitle">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="script eyebrow">Lo que dicen</p>
+          <h2 id="revTitle" class="section-title">Clientes felices, bowls vacíos</h2>
+        </header>
+
+        <div class="review-grid" id="reviewGrid"><!-- reseñas por JS --></div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         CTA FINAL
+    ============================================================== -->
+    <section class="cta" aria-labelledby="ctaTitle">
+      <span class="blob blob--3" aria-hidden="true"></span>
+      <div class="container cta__inner reveal">
+        <img src="assets/img/bowl-power.svg" alt="Bowl saludable listo para pedir" width="360" height="360" class="cta__bowl" loading="lazy" />
+        <div class="cta__copy">
+          <p class="script eyebrow eyebrow--light">¿Con hambre ya?</p>
+          <h2 id="ctaTitle" class="cta__title">Hoy tu próximo bowl puede ser el mejor que hayas probado.</h2>
+          <a class="btn btn--primary btn--xl" href="#constructor">Pedir ahora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================================================
+       FOOTER
+  ============================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer__brand">
+        <span class="brand__name brand__name--light">AC<span class="brand__accent">Bowl</span></span>
+        <p class="script footer__slogan">Ensaladas que te hacen bien</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contacto</h3>
+        <ul class="footer__links">
+          <li><a href="#" data-wa-plain><img src="assets/icons/whatsapp.svg" alt="" width="18" height="18" aria-hidden="true" /> WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/acbowl" target="_blank" rel="noopener"><img src="assets/icons/instagram.svg" alt="" width="18" height="18" aria-hidden="true" /> @acbowl</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Dónde estamos</h3>
+        <p class="footer__line"><img src="assets/icons/pin.svg" alt="" width="18" height="18" aria-hidden="true" /> Chillán, Ñuble</p>
+        <p class="footer__line"><img src="assets/icons/reloj-footer.svg" alt="" width="18" height="18" aria-hidden="true" /> Lun a Vie 12–20 h · Sáb 12–18 h</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> AC Bowl. Todos los derechos reservados.</p>
+      <p class="footer__credit">Hecho con ❤️ y mucha palta.</p>
+    </div>
+  </footer>
+
+  <!-- Toast de confirmación -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
